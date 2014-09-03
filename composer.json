@@ -1,0 +1,37 @@
+{
+    "name": "ivoba/video-preview-image-extractor",
+    "description": "Video Preview Image Extractor",
+    "keywords": [
+        "parser",
+        "extractor",
+        "scrapper",
+        "image",
+        "video",
+        "youtube",
+        "dailymotion",
+        "vimeo"
+    ],
+    "homepage": "https://github.com/ivoba/video-preview-image-extractor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivo Bathke",
+            "email": "ivo.bathke@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ivoba/image-extractor": "~1.0",
+        "grom/tube-link": "~1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~3.7",
+        "ivoba/stop": "~0.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Ivoba\\VideoPreviewImageExtractor": ["src", "tests"]
+        }
+    }
+}
