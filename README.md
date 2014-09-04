@@ -1,5 +1,8 @@
 # Videopreview Image Extractor
 
+[![Build Status](https://secure.travis-ci.org/ivoba/videopreview-image-extractor.png?branch=master)](http://travis-ci.org/ivoba/videopreview-image-extractor)
+[![Total Downloads](https://poser.pugx.org/ivoba/videopreview-image-extractor/downloads.png)](https://packagist.org/packages/ivoba/videopreview-image-extractor)
+
 Video Preview Image Extension for [ImageExtractor](https://github.com/ivoba/image-extractor)
 
 Gets preview images from embedded videos in a html text.
