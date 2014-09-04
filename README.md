@@ -1,7 +1,7 @@
 # Videopreview Image Extractor
 
-[![Build Status](https://secure.travis-ci.org/ivoba/videopreview-image-extractor.png?branch=master)](http://travis-ci.org/ivoba/videopreview-image-extractor)
-[![Total Downloads](https://poser.pugx.org/ivoba/videopreview-image-extractor/downloads.png)](https://packagist.org/packages/ivoba/videopreview-image-extractor)
+[![Build Status](https://secure.travis-ci.org/ivoba/video-preview-image-extractor.png?branch=master)](http://travis-ci.org/ivoba/video-preview-image-extractor)
+[![Total Downloads](https://poser.pugx.org/ivoba/video-preview-image-extractor/downloads.png)](https://packagist.org/packages/ivoba/video-preview-image-extractor)
 
 Video Preview Image Extension for [ImageExtractor](https://github.com/ivoba/image-extractor)
 
@@ -34,7 +34,7 @@ $ phpunit
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/ivoba/videopreview-image-extractor/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/ivoba/video-preview-image-extractor/blob/master/CONTRIBUTING.md) for details.
 
 
 ## Credits
@@ -44,4 +44,4 @@ Please see [CONTRIBUTING](https://github.com/ivoba/videopreview-image-extractor/
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/ivoba/videopreview-image-extractor/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/ivoba/video-preview-image-extractor/blob/master/LICENSE) for more information.
