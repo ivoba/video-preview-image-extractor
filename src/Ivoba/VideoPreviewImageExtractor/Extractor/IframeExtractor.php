@@ -36,6 +36,7 @@ class IframeExtractor implements ExtractorInterface
             foreach ($iframe->attributes as $attr) {
                 switch ($attr->name) {
                     case 'src':
+                        //todo try catch ??
                         $tube = $this->tubeLink->parse($attr->value);
                         if ($img = $tube->thumbnail()) {
                             $src = $img;

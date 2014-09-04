@@ -2,7 +2,26 @@
 
 Video Preview Image Extension for [ImageExtractor](https://github.com/ivoba/image-extractor)
 
-WIP
+Gets preview images from embedded videos in a html text.
+Supported platforms are:
+
+- Vimeo
+- Youtube
+- Dailymotion
+
+## Usage
+
+``` php
+$extractorList = [new VimeoExtractor()];
+$extractor = new ImageExtractor($extractorList, $filter = []);
+$images = $extractor->extract(file_get_contents($file));
+```
+
+A factory method for the default VideoPreviewImageExtractor is provided:
+
+``` php
+    $videoPreviewImageCreator = VideoPreviewImageExtractor::create();
+```
 
 ## Testing
 
