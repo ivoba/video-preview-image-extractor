@@ -4,11 +4,9 @@ namespace Ivoba\VideoPreviewImageExtractor;
 
 
 use Ivoba\ImageExtractor\ImageExtractor;
+use Ivoba\VideoPreviewImageExtractor\Extractor\DailymotionExtractor;
 use Ivoba\VideoPreviewImageExtractor\Extractor\VimeoExtractor;
-use TubeLink\Service\Dailymotion;
-use TubeLink\Service\Vimeo;
-use TubeLink\Service\Youtube;
-use TubeLink\TubeLink;
+use Ivoba\VideoPreviewImageExtractor\Extractor\YoutubeExtractor;
 
 class VideoPreviewImageExtractor extends ImageExtractor
 {
@@ -19,11 +17,12 @@ class VideoPreviewImageExtractor extends ImageExtractor
      */
     public static function create()
     {
-        $tubeLink = new TubeLink();
-        $tubeLink->registerService(new Youtube());
-        $tubeLink->registerService(new Dailymotion());
-        $tubeLink->registerService(new Vimeo());
-        return new self([new VimeoExtractor($tubeLink)],
+        $vimeoExtractor = VimeoExtractor::create();
+        $youtubeExtractor = YoutubeExtractor::create();
+        $dailymotionExtractor = DailymotionExtractor::create();
+        return new self([$vimeoExtractor,
+                         $youtubeExtractor,
+                         $dailymotionExtractor],
                         $filter = []);
     }
 } 
