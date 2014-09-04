@@ -23,7 +23,7 @@ $images = $extractor->extract(file_get_contents($file));
 A factory method for the default VideoPreviewImageExtractor is provided:
 
 ``` php
-    $videoPreviewImageCreator = VideoPreviewImageExtractor::create();
+    $extractor = VideoPreviewImageExtractor::create();
 ```
 
 ## Testing
